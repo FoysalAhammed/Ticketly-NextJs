@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between">
-        <Link href="/" className="w-36 font-bold text-lime-500	 text-lg">
+        <Link href="/" className="w-36 font-bold text-lime-500	 text-2xl">
           <p>Ticketly</p>
         </Link>
 

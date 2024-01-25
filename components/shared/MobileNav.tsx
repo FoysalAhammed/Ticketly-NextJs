@@ -9,6 +9,7 @@ import {
 import Image from "next/image"
 import { Separator } from "../ui/separator"
 import NavItems from "./NavItems"
+import Link from "next/link"
 
 
 const MobileNav = () => {
@@ -25,12 +26,9 @@ const MobileNav = () => {
           />
         </SheetTrigger>
         <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
-          <Image 
-            src="/assets/images/logo.svg"
-            alt="logo"
-            width={128}
-            height={38}
-          />
+        <Link href="/" className="w-36 cursor-pointer font-bold text-lime-500	 text-lg">
+          <p>Ticketly</p>
+        </Link>
           <Separator className="border border-gray-50" />
           <NavItems />
         </SheetContent>
